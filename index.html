@@ -18,29 +18,33 @@
     </head>
     <body style="background-color: rgb(246, 244, 228);"></body>
 
+    <script src="buzz.js"></script>
+  
+
     <body>
 
       <div class="row">
-        <div class="image-container"><img id="icon 1" src="img/2x/Comment.png" height="200" width="200"onmousedown="this.src='img/2x/Comment2.png';"onmouseup="this.src='img/2x/Comment.png';"/></div>
-        <div class="image-container"><img id="icon 2" src="img/2x/Post.png" height="200" width="200" onmousedown="this.src='img/2x/Post2.png';"onmouseup="this.src='img/2x/Post.png';"/></div>
-        <div class="image-container"><img id="icon 3" src="img/2x/Profile.png" height="200" width="200" onmousedown="this.src='img/2x/Profile2.png';"onmouseup="this.src='img/2x/Profile.png';"/></div>
+        <div class="image-container"><img id="icon1" src="img/2x/Comment.png" height="200" width="200"onmousedown="this.src='img/2x/Comment2.png';"onmouseup="this.src='img/2x/Comment.png';"/></div>
+        <div class="image-container"><img id="icon2" src="img/2x/Post.png" height="200" width="200" onmousedown="this.src='img/2x/Post2.png';"onmouseup="this.src='img/2x/Post.png';"/></div>
+        <div class="image-container"><img id="icon3" src="img/2x/Profile.png" height="200" width="200" onmousedown="this.src='img/2x/Profile2.png';"onmouseup="this.src='img/2x/Profile.png';"/></div>
     </div>
 
     <div class="row">
-        <div class="image-container"><img id="icon 4" src="img/2x/Video.png" height="200" width="200" onmousedown="this.src='img/2x/Video2.png';"onmouseup="this.src='img/2x/Video.png';"/></div>
-        <div class="image-container"><img id="icon 5" src="img/2x/Headphone.png" height="200" width="200" onmousedown="this.src='img/2x/Headphone2.png';"onmouseup="this.src='img/2x/Headphone.png';"/></div>
-        <div class="image-container"><img id="icon 6" src="img/2x/Photo.png" height="200" width="220" onmousedown="this.src='img/2x/Photo2.png';"onmouseup="this.src='img/2x/Photo.png';"/></div>
+        <div class="image-container"><img id="icon4" src="img/2x/Video.png" height="200" width="200" onmousedown="this.src='img/2x/Video2.png';"onmouseup="this.src='img/2x/Video.png';"/></div>
+        <div class="image-container"><img id="icon5" src="img/2x/Headphone.png" height="200" width="200" onmousedown="this.src='img/2x/Headphone2.png';"onmouseup="this.src='img/2x/Headphone.png';"/></div>
+        <div class="image-container"><img id="icon6" src="img/2x/Photo.png" height="200" width="220" onmousedown="this.src='img/2x/Photo2.png';"onmouseup="this.src='img/2x/Photo.png';"/></div>
         </div>
 
     <div class="row">
-        <div class="image-container"><img id="icon 7" src="img/2x/Piano.png" height="200" width="200"onmousedown="this.src='img/2x/Piano2.png';"onmouseup="this.src='img/2x/Piano.png';"/></div>
-        <div class="image-container"><img id="icon 8" src="img/2x/Palette.png" height="200" width="200" onmousedown="this.src='img/2x/Palette2.png';"onmouseup="this.src='img/2x/Palette.png';"/></div>
-        <div class="image-container"><img id="icon 9" src="img/2x/Microphone.png" height="200" width="200" onmousedown="this.src='img/2x/Microphone2.png';"onmouseup="this.src='img/2x/Microphone.png';"/></div>
+        <div class="image-container"><img id="icon7" src="img/2x/Piano.png" height="200" width="200"onmousedown="this.src='img/2x/Piano2.png';"onmouseup="this.src='img/2x/Piano.png';"/></div>
+        <div class="image-container"><img id="icon8" src="img/2x/Palette.png" height="200" width="200" onmousedown="this.src='img/2x/Palette2.png';"onmouseup="this.src='img/2x/Palette.png';"/></div>
+        <div class="image-container"><img id="icon9" src="img/2x/Microphone.png" height="200" width="200" onmousedown="this.src='img/2x/Microphone2.png';"onmouseup="this.src='img/2x/Microphone.png';"/></div>
     </div>
 
   <script>
     var sound1 = new buzz.sound("sound/cars_slide.wav");
     window.onload = function(){
-      document.getElementbyid('icon1').addEventListener('click, function(){sound1.play();}');
-    };
+      document.getElementbyId('icon1').addEventListener('click', function(){sound1.play();});
+    }
   </script>
+
