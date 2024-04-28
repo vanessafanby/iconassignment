@@ -41,6 +41,43 @@
         <div class="image-container"><img id="icon9" src="img/2x/Microphone.png" height="200" width="200" onmousedown="this.src='img/2x/Microphone2.png';"onmouseup="this.src='img/2x/Microphone.png';"/></div>
     </div>
 
+    <script>
+      const sound1 = new buzz.sound("sound/cars_slide.wav")
+      const sound2 = new buzz.sound("sound/knock_slide.wav")
+      window.onload = () => {
+        document.getElementById('icon1').onclick = () => sound1.play()
+        document.getElementById('icon2').onclick = () => sound2.play()
+      }
+    </script>
+  
+  <script>
+    const sound3 = new buzz.sound("sound/leaf_slide.wav")
+    const sound4 = new buzz.sound("sound/metal_slide.wav")
+    window.onload = () => {
+      document.getElementById('icon3').onclick = () => sound3.play()
+      document.getElementById('icon4').onclick = () => sound4.play()
+    }
+  </script>
+  
+  <script>
+    const sound5 = new buzz.sound("sound/rain_slide.wav")
+    const sound6 = new buzz.sound("sound/river_slide.wav")
+    window.onload = () => {
+      document.getElementById('icon5').onclick = () => sound5.play()
+      document.getElementById('icon6').onclick = () => sound6.play()
+    }
+  </script>
+
+<script>
+  const sound7 = new buzz.sound("sound/stomp_slide.wav")
+  const sound8 = new buzz.sound("sound/tree_slide.wav")
+  window.onload = () => {
+    document.getElementById('icon7').onclick = () => sound7.play()
+    document.getElementById('icon8').onclick = () => sound8.play()
+  }
+</script>
+
+
   <script>
     var sound1 = new buzz.sound("sound/cars_slide.wav");
     window.onload = function(){
